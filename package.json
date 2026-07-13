@@ -1,0 +1,29 @@
+{
+  "name": "tui_example",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsx main.tsx",
+    "build": "esbuild app.jsx --bundle --platform=node --format=esm --external:ink --external:ink-text-input --external:react --jsx=automatic --jsx-import-source=react --outfile=app.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openrouter/ai-sdk-provider": "^3.0.0",
+    "ai": "^7.0.16",
+    "dotenv": "^17.4.2",
+    "ink": "^7.1.0",
+    "ink-text-input": "^6.0.0",
+    "koffi": "^3.0.2",
+    "react": "^19.2.7",
+    "tsx": "^4.23.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}
